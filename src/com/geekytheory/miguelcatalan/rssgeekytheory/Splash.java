@@ -33,6 +33,12 @@ public class Splash extends Activity {
     	timer.start();
     }
 
+	@Override
+	protected void onPause() {
+		super.onPause();
+		finish();
+	}
+ 
 
     
 }
