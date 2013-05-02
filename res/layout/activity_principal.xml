@@ -15,12 +15,14 @@
         android:id="@+id/button_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_default"
         android:text="Button 1" />
 
     <Button
         android:id="@+id/button_2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher"
         android:text="Button 2" />
 
     <Button
