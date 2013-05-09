@@ -26,11 +26,10 @@
         <activity
             android:name="com.geekytheory.miguelcatalan.rssgeekytheory.Principal"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.PRINCIPAL" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geekytheory.miguelcatalan.rssgeekytheory.Activity_Noticias"
+            android:label="@string/app_name" >
         </activity>
     </application>
 

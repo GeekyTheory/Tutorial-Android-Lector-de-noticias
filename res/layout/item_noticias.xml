@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_shape_normal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/noticia_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/noticia_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/noticia_imageView"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/noticia_imageView"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Titulo" />
+
+        <TextView
+            android:id="@+id/noticia_textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="fecha"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/noticia_textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contenido"
+            android:layout_alignLeft="@+id/noticia_textview_title"
+            android:layout_below="@+id/noticia_textview_title"/>
+    </RelativeLayout>
+
+</LinearLayout>

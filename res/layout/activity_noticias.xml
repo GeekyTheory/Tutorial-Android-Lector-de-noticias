@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/noticias_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000" />
+
+</LinearLayout>
