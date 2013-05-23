@@ -6,6 +6,7 @@ public class Noticia {
 
 	private String titulo;
 	private String contenido;
+	private String resumen;
 	private String enlace;
 	private String imagen;
 	private Date fecha;
@@ -16,6 +17,10 @@ public class Noticia {
 
 	public void setContenido(String content) {
 		this.contenido = content;
+	}
+	
+	public void setResumen(String text) {
+		this.resumen = text;
 	}
 
 	public void setEnlace(String url) {
@@ -33,9 +38,13 @@ public class Noticia {
 	public String getTitulo() {
 		return this.titulo;
 	}
-
+	
 	public String getContenido() {
 		return this.contenido;
+	}
+
+	public String getResumen() {
+		return this.resumen;
 	}
 
 	public String getEnlace() {

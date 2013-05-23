@@ -54,7 +54,7 @@ public class Noticias_Adapter extends ArrayAdapter<Object> {
 		placeHolder.time.setText(""
 				+ noticias.get(position).getFecha().getDate() + "/"
 				+ noticias.get(position).getFecha().getMonth());
-		placeHolder.content.setText(noticias.get(position).getContenido());
+		placeHolder.content.setText(noticias.get(position).getResumen());
 		return (convertView);
 	}
 

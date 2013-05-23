@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/noticia_imageView"
             android:layout_marginLeft="8dp"
+            android:layout_marginRight="30dp"
             android:layout_toRightOf="@+id/noticia_imageView"
             android:ellipsize="end"
             android:singleLine="true"
@@ -42,6 +43,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contenido"
+            android:ellipsize="end"
+            android:singleLine="true"
             android:layout_alignLeft="@+id/noticia_textview_title"
             android:layout_below="@+id/noticia_textview_title"/>
     </RelativeLayout>
