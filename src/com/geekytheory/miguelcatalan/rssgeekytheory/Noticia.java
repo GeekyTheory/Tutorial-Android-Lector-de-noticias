@@ -1,8 +1,10 @@
 package com.geekytheory.miguelcatalan.rssgeekytheory;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Noticia {
+@SuppressWarnings("serial")
+public class Noticia implements Serializable {
 
 	private String titulo;
 	private String contenido;

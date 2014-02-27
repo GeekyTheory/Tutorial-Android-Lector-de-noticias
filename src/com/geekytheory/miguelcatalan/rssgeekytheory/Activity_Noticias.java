@@ -3,10 +3,14 @@ package com.geekytheory.miguelcatalan.rssgeekytheory;
 import java.util.ArrayList;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -31,6 +35,17 @@ public class Activity_Noticias extends Activity {
 		lista = (ListView) findViewById(R.id.noticias_listview);
 		adapter = new Noticias_Adapter(this, Array_Noticias);
 		lista.setAdapter(adapter);
+		lista.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Intent intent = new Intent(Activity_Noticias.this, Activity_Articulo.class);
+				intent.putExtra("parametro", Array_Noticias.get(arg2));
+				//intent.putExtra("parametro", "Artículo número "+(arg2+1));
+				startActivity(intent);		
+			}
+		});
 	}
 
 	private void rellenarNoticias() {
