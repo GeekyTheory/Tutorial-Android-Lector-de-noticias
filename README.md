@@ -3,7 +3,7 @@ Este repositorio contiene todo el código de los videotutoriales creado por [Mig
 
 ###Utilización
 * Simplemente decarga el código haciendo un clone o un fork
-* Enjoy the codding!
+* Enjoy the coding!
 
 ###License
 
